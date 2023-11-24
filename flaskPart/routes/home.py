@@ -2,8 +2,7 @@ from flaskPart import app
 from flask import render_template
 from flaskPart.forms.open import Open
 from flaskPart.forms.close import Close
-import ArdChip
-
+from ArdChip import set
 @app.route("/",methods=["POST","GET"])
 def home():
     form1 = Open()
