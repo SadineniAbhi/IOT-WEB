@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <div class = "d-flex align-items-center justify-content-center vh-100">
+        <div class="text-center">
+            <H3>Use the buttons below to control the lock!</H3>
+            <div class="container mb-3">
+                <form method="post">
+                    {{form1.hidden_tag()}}
+                    {{form1.open(class="btn btn-lg btn-block btn-primary")}}
+                    {{form2.hidden_tag()}}
+                    {{form2.close(class="btn btn-lg btn-block btn-primary")}}
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+    
+{% endblock %}
